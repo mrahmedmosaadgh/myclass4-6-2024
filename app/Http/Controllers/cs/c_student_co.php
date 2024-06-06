@@ -15,21 +15,39 @@ use App\Models\hruserdata;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+// use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Inertia\Inertia;
 
 class c_student_co extends Controller
 {
     public function c_student(Request $request)
     {
         $fun = null;
-
+// return $request->all();
         if(isset($request->data['fun'])){
           $fun = $request->data['fun'];
       }
         if(isset($request['fun'])){
           $fun = $request['fun'];
       }
-        $my_id =  Auth::user()->id;
+
+
+
+    //   return Inertia::share('classview/admin/data/control_admin_data', ['uuuu_________________'=>Auth::user()]);
+    //   return Inertia::render('classview/admin/data/control_admin_data', ['uuuu_________________'=>Auth::user()]);
+    //   Inertia::share('postData___________', Auth::user());
+
+    //   return response()->json();
+
+
+    //  return Inertia ::share('admin.data', ['uuuu_________________'=>Auth::user()]);
+       response()->json([['ok',Auth::user()]  
+        // Additional response data (optional)
+    ]);
+      return ['ok',Auth::user()]  ;
+      return Auth::guest() ;
+    //   return  $my_id =  Auth::user()->id;
 
         $school = hrschooluser::where('user_id', $my_id)->first();
         $my_first_school_id = null;

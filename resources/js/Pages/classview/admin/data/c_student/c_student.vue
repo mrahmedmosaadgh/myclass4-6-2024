@@ -2,7 +2,8 @@
     <div>
           
         <div class="hidden h-0">{{ counter }}</div>
- 
+ ggggggggggggggggggg
+ <pre>{{ JSON.stringify($page, null, 2) }}</pre>
         <a-button
             type="primary"
             shape="circle"
@@ -358,6 +359,10 @@
 import { ref, computed, onMounted } from "vue";
 import insert from "./co/insert.vue";
 import update from "./co/update.vue";
+import { reactive } from 'vue'
+import { router } from '@inertiajs/vue3'
+
+
 import {
     PlusOutlined,
     MoreOutlined,
@@ -368,23 +373,95 @@ import {
 import { useAppStore } from "@/stores/appstore";
 const Ap = useAppStore();
 const my_db_route = ref("/api/school_admin/c_student");
-const  route =  "/api/school_admin/c_student" ;
+const  my_route =  "/api/school_admin/c_student" ;
+// const  my_route =  "/school_admin/c_student" ;
 const data_to_get_class_marks = ref({});
 const open_change_sequence = ref(false);
 const current_sequence = ref(null);
 const up_sequence = ref(null);
-const school_id = ref(Ap.res?.my_students?.["c_students"][0]["school_id"]);
+const school_id = ref(Ap.res?.my_students?.["c_students"]?.[0]?.["school_id"]);
 const classroom = ref(null);
 const insert_data = ref({});
+
+
+
+// import { useForm } from '@inertiajs/vue3';
+// const createApiTokenForm = useForm({
+//     name: '',
+//     permissions: 'props.defaultPermissions',
+// });
+
+
+
+const fetchData = async () => {
+  try {
+    const response = await axios.post(my_route);
+    
+    console.log('onSuccess____________________',response.data);
+    
+ 
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    // Handle errors (optional)
+  }
+};
+
+//     const submit = async () => {
+//     console.log('submit________________-');
+//     createApiTokenForm.post( my_route , {
+//     // createApiTokenForm.post(route(my_route), {
+//         preserveScroll: true,
+//         onSuccess: (res) => {
+//      console.log('onSuccess____________________',res);
+//         },
+//     });
+// };
+
+
+
+
+
+
+
+
+
+
 onMounted(() => {
     Ap.res.my_students=[]
     // my_classes_fun();
     // show_fun();
-    fun_db2(  { fun: 'my_classes', data: null, confirm: false })
+    fetchData();
+    // submit();
+    // fun_db2(  { fun: 'my_classes', data: null, confirm: false })
 });
 
 const filter_text = ref(null);
 const filter_col = ref("name");
+const form = ref("name");
+
+// function submit() {
+//   router.post(route, form)
+// }
+
+
+// const submit = async () => {
+//     console.log('ssssss');
+//   try {
+//     await router.post(route, { fun: 'my_classes', data: null, confirm: false })
+//     // await $inertia.post('/posts', form.value);
+//     // Handle successful submission (optional)
+// } catch (error) {
+//       console.log(error);
+
+//     // Handle errors (optional)
+//   }
+// };
+
+
+
+
+
+
 
 // const my_students_filtered = computed(() => {
 //     //console.log(1);
@@ -444,7 +521,8 @@ Ap.loading=true
 
     // ==========================================================================
 
-  
+  console.log('data.fun___________________');
+  console.log(data.fun);
         axios.post(route, data).then((res) => {
             Ap.res.loading=false
             Ap.res[data.fun] = res.data 

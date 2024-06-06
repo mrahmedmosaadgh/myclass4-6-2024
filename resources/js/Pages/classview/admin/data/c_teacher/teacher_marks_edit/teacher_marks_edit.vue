@@ -49,7 +49,6 @@ import { ref, computed, onMounted } from "vue";
 // import main_co from "./co/table4/main_co.vue";
 import dashboard from "./co/teacher_dashboard_com.vue";
 // import c_subject_marks_print_table from "@/pages/hr/school_admin/new/reports/c_marks/c_print/co/c_subject_marks_print_table.vue";
-import message from 'vue-m-message'
 
 import marks_edit from "./co/marks_edit.vue";
 //resources/js/pages/hr/school_admin/new/data/c_marks/c_print/marks_edit.vue
@@ -219,7 +218,7 @@ const get_class_marks_db = () => {
             }
 
             Ap.loading = false;
-            options?.msg != null ? message.success(options.msg) : null;
+            options?.msg != null ? Ap.msg('success',options.msg) : null;
 
             if (options.log) {
                 //console.log(response);
@@ -244,11 +243,8 @@ const get_class_marks_db = () => {
                 ? options.msg_error + " :" + error?.response?.data?.message
                 : null;
 
-            //console.log("error.response ");
-            //console.log(error?.response?.data?.message);
-            // message.error(error?.response?.data?.message);
 
-            options.msg != null ? message.error(msg1) : null;
+            options.msg != null ? Ap.msg('error', msg1) : null;
         });
 
 

@@ -234,7 +234,6 @@ const props = defineProps(["data",'classes']);
 
 // import type { FormInstance } from "ant-design-vue";
 // import { SmileOutlined, UserOutlined } from "@ant-design/icons-vue";
-import message from "vue-m-message";
 import { useAppStore } from "@/stores/appstore";
 const emits = defineEmits(["open_modal"]);
 const Ap = useAppStore();
@@ -288,7 +287,7 @@ const felid_names = {
 };
 
 function onFinishFailed() {
-    message.error("err");
+    // message.error("err");
     //console.log("felid_form.value");
     //console.log(felid_form.value);
 }

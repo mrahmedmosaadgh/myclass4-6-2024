@@ -5,9 +5,12 @@
         :model="dynamicValidateForm"
         @finish="onFinish"
     >
-        <a-select
+    <div class="p-0" v-if="titles">
+
+   
+        <a-select 
             v-for="(title, index) in titles"
-            :key="title.id"
+            :key="index"
             v-model:value="title.ar"
             class="w-24"
             mode="tags"
@@ -18,6 +21,8 @@
             @change="handleChange()"
             :field-names="{ label: 'ar', value: 'id', options: 'data' }"
         ></a-select>
+
+       </div>  
         <a-space
             v-for="(user, index) in dynamicValidateForm.users"
             :key="user.id"
@@ -31,9 +36,9 @@
                     required: true,
                     message: 'Missing first name',
                 }"
-            >
+            >     v-model:value="title2"
                 <a-select
-                    v-model:value="titles"
+               
                     class="w-24"
                     mode="tags"
                     style="width: 244px"

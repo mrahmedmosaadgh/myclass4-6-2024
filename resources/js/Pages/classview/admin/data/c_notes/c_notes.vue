@@ -188,7 +188,6 @@
 import { ref, onMounted, computed, watch } from "vue";
 import { useAppStore } from "@/stores/appstore";
 // import { useschoolAdminStore } from "@/stores/schoolAdminStore";
-// import message from "vue-m-message";
 import modal_new from "./com/add_school_semester_new.vue";
 import modal_update from "./com/add_school_semester_update.vue";
 

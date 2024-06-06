@@ -1,0 +1,1 @@
+import{b as s}from"./collapseMotion-iRHk9BZf.js";function u(n){return n!==n}function f(n,t,e){for(var i=e-1,r=n.length;++i<r;)if(n[i]===t)return i;return-1}function c(n,t,e){return t===t?f(n,t,e):s(n,u,e)}function d(n,t){var e=n==null?0:n.length;return!!e&&c(n,t,0)>-1}export{d as a};

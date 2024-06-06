@@ -1,5 +1,11 @@
 <template>
-    <div   v-if=" Ap.permissions.has('control_admin_data')">
+   <AppLayout title="Dashboard">
+        <template #header>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                Dashboard
+            </h2>
+        </template>
+    <!-- <div   v-if=" Ap.permissions.has('control_admin_data')"> -->
         <div class="p-4 noprint">
             <span class="px-4 flex flex-row gap-4 noprint">
              <!-- ------------------------------------------------------------- -->
@@ -43,18 +49,21 @@
         <!-- <transition enter-active-class="fade-in" leave-active-class="fade-out">
             <c_semester v-if="comp == 'semester'">c_semester err</c_semester>
         </transition> -->
-        <transition enter-active-class="fade-in" leave-active-class="fade-out">
-            <!-- <c_notes v-if="comp == 'notes'">c_notes err</c_notes> -->
+        <!-- <transition enter-active-class="fade-in" leave-active-class="fade-out">
             <soon v-if="comp == 'notes'" :text="Ap.lang=='en'?null:'قريبا'" size="66" text_color="green">c_notes err</soon>
-        </transition>
+        </transition> -->
+        <!-- <c_notes v-if="comp == 'notes'">c_notes err</c_notes> -->
 
 
-    </div>
+    </AppLayout>
+    <!-- <p v-else>no_permission err</p> -->
        <!-- <no_permission v-else>no_permission err</no_permission> -->
 
 </template>
 <script setup>
 import { ref } from "vue";
+import AppLayout from '@/Layouts/AppLayout.vue';
+
 import { useAppStore } from "@/stores/appstore";
 import tab_button from "./co/tab_button.vue";
 import c_subject from "./c_subject/c_subject.vue";

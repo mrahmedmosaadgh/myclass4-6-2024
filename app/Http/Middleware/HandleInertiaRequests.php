@@ -49,7 +49,8 @@ class HandleInertiaRequests extends Middleware
             'email' => auth()->user()->email ??'',
             ],
             // 'permissions'=> auth()->user()->getAllPermissions()->pluck('name')
-            'roles' => $request->user() ? $request->user()->roles->map->name : [],
+             
+            'roles' => $request->user()  ? $request->user()->roles->map->name : [],
             'permissions' => $request->user() ? $request->user()->getPermissionArray() : [],
         ]);
     }

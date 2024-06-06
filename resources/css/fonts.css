@@ -1,48 +1,48 @@
 @font-face {
     font-family: kofi_main;
-    /* src: url('/main/fonts/kofi/NotoKufiArabic-Thin.ttf'); */
-    src: url("/main/fonts/kofi/NotoKufiArabic-Regular.ttf");
-    /* src: url('/main/fonts/kofi/NotoKufiArabic-Light.ttf'); */
-    /* src: url('/main/fonts/kofi/NotoKufiArabic-ExtraLight.ttf'); */
+    /* src: url('main/fonts/kofi/NotoKufiArabic-Thin.ttf'); */
+    src: url("main/fonts/kofi/NotoKufiArabic-Regular.ttf");
+    /* src: url('main/fonts/kofi/NotoKufiArabic-Light.ttf'); */
+    /* src: url('main/fonts/kofi/NotoKufiArabic-ExtraLight.ttf'); */
 }
 
 @font-face {
     font-family: kofi_bold;
-    src: url("/main/fonts/kofi/NotoKufiArabic-Bold.ttf");
+    src: url("main/fonts/kofi/NotoKufiArabic-Bold.ttf");
 }
 @font-face {
     font-family: kofi_bold;
-    src: url("/main/fonts/kofi/NotoKufiArabic-Bold.ttf");
+    src: url("main/fonts/kofi/NotoKufiArabic-Bold.ttf");
 }
 
 @font-face {
     font-family: a1;
-    src: url("/main/fonts/a-jannat-lt-bold.ttf");
+    src: url("main/fonts/a-jannat-lt-bold.ttf");
 }
 
 @font-face {
     font-family: a2;
-    src: url("/main/fonts/decotype-naskh-special.ttf");
+    src: url("main/fonts/decotype-naskh-special.ttf");
 }
 @font-face {
     font-family: a3;
-    src: url("/main/fonts/din-next-lt-w23-heavy.ttf");
+    src: url("main/fonts/din-next-lt-w23-heavy.ttf");
 }
 @font-face {
     font-family: a4;
-    src: url("/main/fonts/frutiger-lt-arabic-65-bold.ttf");
+    src: url("main/fonts/frutiger-lt-arabic-65-bold.ttf");
 }
 @font-face {
     font-family: a5;
-    src: url("/main/fonts/ge-snd-book.ttf");
+    src: url("main/fonts/ge-snd-book.ttf");
 }
 @font-face {
     font-family: a6;
-    src: url("/main/fonts/decotype-naskh-special.ttf");
+    src: url("main/fonts/decotype-naskh-special.ttf");
 }
 @font-face {
     font-family: a7;
-    src: url("/main/fonts/pt-bold-heading.ttf");
+    src: url("main/fonts/pt-bold-heading.ttf");
 }
 
 .kofi_main {
@@ -79,46 +79,46 @@
 
 
 /* ==================== */
-@font-face {font-family: f1;src: url("/main/fonts/num/1.ttf");}
+@font-face {font-family: f1;src: url("main/fonts/num/1.ttf");}
 .f1 {font-family: f1;}    
     
-@font-face {font-family: f2;src: url("/main/fonts/num/2.ttf");}
+@font-face {font-family: f2;src: url("main/fonts/num/2.ttf");}
 .f2 {font-family: f2;}   
 
-@font-face {font-family: f3;src: url("/main/fonts/num/3.ttf");}
+@font-face {font-family: f3;src: url("main/fonts/num/3.ttf");}
 .f3 {font-family: f3;}   
     
-@font-face {font-family: f4;src: url("/main/fonts/num/4.ttf");}
+@font-face {font-family: f4;src: url("main/fonts/num/4.ttf");}
 .f4 {font-family: f4;}   
 
-@font-face {font-family: f5;src: url("/main/fonts/num/5.ttf");}
+@font-face {font-family: f5;src: url("main/fonts/num/5.ttf");}
 .f5 {font-family: f5;} 
-@font-face {font-family: f6;src: url("/main/fonts/num/6.ttf");}
+@font-face {font-family: f6;src: url("main/fonts/num/6.ttf");}
 .f6 {font-family: f6;} 
-@font-face {font-family: f7;src: url("/main/fonts/num/7.ttf");}
+@font-face {font-family: f7;src: url("main/fonts/num/7.ttf");}
 .f7 {font-family: f7;} 
-@font-face {font-family: f8;src: url("/main/fonts/num/8.ttf");}
+@font-face {font-family: f8;src: url("main/fonts/num/8.ttf");}
 .f8 {font-family: f8;} 
 
 
 
 
-@font-face {font-family: f9;src: url("/main/fonts/num/9.ttf");}
+@font-face {font-family: f9;src: url("main/fonts/num/9.ttf");}
 .f9 {font-family: f9;} 
 
-@font-face {font-family: f10;src: url("/main/fonts/num/10.ttf");}
+@font-face {font-family: f10;src: url("main/fonts/num/10.ttf");}
 .f10 {font-family: f10;} 
 
-@font-face {font-family: f11;src: url("/main/fonts/num/11.ttf");}
+@font-face {font-family: f11;src: url("main/fonts/num/11.ttf");}
 .f11 {font-family: f11;} 
 
-@font-face {font-family: f12;src: url("/main/fonts/num/12.ttf");}
+@font-face {font-family: f12;src: url("main/fonts/num/12.ttf");}
 .f12 {font-family: f12;} 
 
-@font-face {font-family: f13;src: url("/main/fonts/num/13.ttf");}
+@font-face {font-family: f13;src: url("main/fonts/num/13.ttf");}
 .f13 {font-family: f13;} 
 
-@font-face {font-family: f14;src: url("/main/fonts/num/14.ttf");}
+@font-face {font-family: f14;src: url("main/fonts/num/14.ttf");}
 .f14 {font-family: f14;} 
 
 
@@ -136,43 +136,43 @@
 
 
 
-@font-face {font-family: fk1;src: url("/main/fonts/num/kofi/1.ttf");}
+@font-face {font-family: fk1;src: url("main/fonts/num/kofi/1.ttf");}
 .fk1 {font-family: fk1;} 
 
 
-@font-face {font-family: fk1;src: url("/main/fonts/num/kofi/1.ttf");}
+@font-face {font-family: fk1;src: url("main/fonts/num/kofi/1.ttf");}
 .fk1 {font-family: fk1;} 
 
 
-@font-face {font-family: fk2;src: url("/main/fonts/num/kofi/2.ttf");}
+@font-face {font-family: fk2;src: url("main/fonts/num/kofi/2.ttf");}
 .fk2 {font-family: fk2;} 
 
 
-@font-face {font-family: fk3;src: url("/main/fonts/num/kofi/3.ttf");}
+@font-face {font-family: fk3;src: url("main/fonts/num/kofi/3.ttf");}
 .fk3 {font-family: fk3;} 
 
 
-@font-face {font-family: fk4;src: url("/main/fonts/num/kofi/4.ttf");}
+@font-face {font-family: fk4;src: url("main/fonts/num/kofi/4.ttf");}
 .fk4 {font-family: fk4;} 
 
 
-@font-face {font-family: fk5;src: url("/main/fonts/num/kofi/5.ttf");}
+@font-face {font-family: fk5;src: url("main/fonts/num/kofi/5.ttf");}
 .fk5 {font-family: fk5;} 
 
 
-@font-face {font-family: fk6;src: url("/main/fonts/num/kofi/6.ttf");}
+@font-face {font-family: fk6;src: url("main/fonts/num/kofi/6.ttf");}
 .fk6 {font-family: fk6;} 
 
 
-@font-face {font-family: fk7;src: url("/main/fonts/num/kofi/7.ttf");}
+@font-face {font-family: fk7;src: url("main/fonts/num/kofi/7.ttf");}
 .fk7 {font-family: fk7;} 
 
 
-@font-face {font-family: fk8;src: url("/main/fonts/num/kofi/8.ttf");}
+@font-face {font-family: fk8;src: url("main/fonts/num/kofi/8.ttf");}
 .fk8 {font-family: fk8;} 
 
 
-@font-face {font-family: fk9;src: url("/main/fonts/num/kofi/9.ttf");}
+@font-face {font-family: fk9;src: url("main/fonts/num/kofi/9.ttf");}
 .fk9 {font-family: fk9;} 
 
 

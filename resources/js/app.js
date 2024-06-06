@@ -5,8 +5,10 @@ import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
+import { createPinia } from 'pinia';
 // import PrimeVue from 'primevue/config';
 // import { Icon } from '@ant-design/icons-vue';
+const pinia = createPinia();
 
 const appName = import.meta.env.VITE_APP_NAME || 'myclass';
 
@@ -20,7 +22,7 @@ createInertiaApp({
             // .component(Icon,'Icon')
             .use(plugin)
             .use(ZiggyVue)
-
+            .use(pinia) // Add Pinia
             // .use(PrimeVue, {
             //     unstyled: true
             // }) 
